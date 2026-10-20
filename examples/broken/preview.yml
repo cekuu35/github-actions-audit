@@ -1,0 +1,24 @@
+name: Preview Deploy
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions: read-all
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Install and deploy
+        run: |
+          npm ci
+          echo "Deploying PR title: ${{ github.event.pull_request.title }}"
+          vercel deploy --token=$VERCEL_TOKEN
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      - uses: some-action/deploy@main
+        with:
+          api_key: sk-FAKE0000FAKE0000FAKE0000FAKE

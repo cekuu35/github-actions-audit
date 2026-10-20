@@ -1,0 +1,15 @@
+{
+  "name": "github-actions-audit",
+  "version": "1.0.0",
+  "description": "Static audit of GitHub Actions workflows for pwn requests (pull_request_target), script injection, hardcoded secrets and unpinned actions. Zero dependencies.",
+  "license": "MIT",
+  "author": "Cenk Kurtoglu <cnkkurtoglu@gmail.com>",
+  "repository": { "type": "git", "url": "git+https://github.com/cekuu35/github-actions-audit.git" },
+  "homepage": "https://github.com/cekuu35/github-actions-audit#readme",
+  "bugs": "https://github.com/cekuu35/github-actions-audit/issues",
+  "bin": { "github-actions-audit": "bin/ghaudit.js" },
+  "files": ["bin", "examples", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node --test" },
+  "keywords": ["github-actions", "ci", "security", "audit", "pwn-request", "supply-chain", "devsecops", "linter"]
+}
