@@ -90,6 +90,7 @@ Free, zero-dependency security auditors in the same shape:
 - [mcp-config-security](https://github.com/cekuu35/mcp-config-security) — scan MCP client configs (Claude, Cursor, Windsurf) for leaked tokens
 - [firebase-rules-audit](https://github.com/cekuu35/firebase-rules-audit) — static audit of Firebase Firestore & Storage security rules
 - [n8n-workflow-audit](https://github.com/cekuu35/n8n-workflow-audit) — scan exported n8n workflow JSON for hardcoded credentials
+- [stripe-webhook-audit](https://github.com/cekuu35/stripe-webhook-audit) — Stripe webhook handlers that trust events without signature verification
 - [supabase-rls-leak-demo](https://github.com/cekuu35/supabase-rls-leak-demo) — red/green fixture proving a Supabase RLS leak, and its one-file fix
 
 ## Support
